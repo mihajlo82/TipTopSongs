@@ -1,0 +1,161 @@
+.tableWrapp{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sortWrapp{
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.asideWrapp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.asideWrapp p{
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.asideWrapp select{
+    height: 28px;
+    padding: 0px;
+    outline: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+.tr{
+    background-color: rgb(221, 221, 221);
+    color:rgb(39, 39, 39);
+    cursor: pointer;
+}
+
+th{
+    background-color: rgb(65, 65, 65);
+    color:white;
+    font-size: 1.3rem;
+    padding: 25px;
+    border:none;
+    text-align: center;
+}
+
+th:nth-child(1){
+    text-align: left;
+}
+
+th:last-child{
+    text-align: right;
+}
+
+
+td{
+    border:none;
+    text-align: center;
+    padding: 8px;
+}
+
+td:nth-child(1){
+    text-align: left;
+    padding-left: 18px;
+}
+
+td:last-child{
+    text-align: right;
+    padding-right: 18px;
+}
+
+.modalWrapp{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0; 
+    bottom:0;
+    background-color: rgba(255,255,255, 0.5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.modalMain{
+    width:25%; 
+    display:flex;
+    flex-direction:column;
+    padding:15px;
+    justify-content:center;
+    align-items:center;
+    background-color:rgb(104, 114, 119);
+    color:white;
+    font-size: 1.05rem;
+    border-radius: 14px;
+    box-shadow: -1px -2px 13px 2px rgba(0,0,0,0.54);
+    -webkit-box-shadow: -1px -2px 13px 2px rgba(0,0,0,0.54);
+    -moz-box-shadow: -1px -2px 13px 2px rgba(0,0,0,0.54);
+}
+
+.modalMain p b{
+    font-size: 1.15rem;
+}
+
+.modalBtnClose{
+    margin-top: 12px;
+    padding: 12px 20px;
+    background-color: rgb(17, 168, 255);
+    border-color: rgb(17, 168, 255);
+    outline: none;
+    color:white;
+    width:33%;
+    border-radius: 9px;
+    font-weight:bold;
+    font-size: 1.03rem;
+}
+.closeBtnModal{
+    background-color: red;
+}
+
+
+.sortDropd{
+    font-weight: bold;
+}
+
+/* ///////////////////////////////
+         RESPONSIVE
+//////////////////////////////////*/
+@media screen and (max-width: 1220px) {
+    .tableWrapp{
+        width: 85%;
+    }
+
+    .modalMain{
+        width: 50%;
+    }
+  }
+
+
+  @media screen and (max-width: 684px) {
+    .tableWrapp{
+        width: 92%;
+    }
+    th{
+        font-size: 1.2rem;
+        padding: 25px;
+    }
+    
+    .modalMain{
+        width: 85%;
+    }
+
+    td{
+        font-size: 0.88rem;
+    }
+  }
